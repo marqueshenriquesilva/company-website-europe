@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contactstyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="light-mode">
+    <header>
+        <ul class="top-bar-list">
+            <a class="top-bar-item" href="home.html" id="header">Company&trade;</a>
+            <a class="top-bar-item" href="page.html">Explore</a>
+            <a class="top-bar-item" href="page.html">Posts</a>
+            <a class="top-bar-item" href="contact.html">Contact</a>
+        </ul>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <form id="contact-form">
+                <h2>Contact form</h2>
+                <div class="msg"></div>
+                <div>
+                    <label for="name">Name*</label>
+                    <input class="form-control" type="text" id="name" required="" onchange="return trim(this)">
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input class="form-control" type="email" id="email" required="" onchange="return trim(this)">
+                </div>
+                <div>
+                    <label for="enquiry">Subject*</label>
+                    <textarea class="form-control" id="enquiry" name="enquiry" rows="8" maxlength="3000" onchange="return trim(this)" autocomplete="on" required=""></textarea>
+                </div>
+                <div id="form-confirm">
+                    <div class="success" id="success"></div>
+                </div>
+                <input class="btn" type="submit" value="Submit">
+            </form>
+
+            <ul id="users"></ul>
+
+            <ul class="items">
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&#169; 2023 Company</p>
+        <p class="copyright">All rights reserved</p>
+    </footer>
+
+    <script src="scripts\formscript.js"></script>
+</body>
+</html>
